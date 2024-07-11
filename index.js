@@ -1,7 +1,7 @@
 // TODO: 1]  Import Modules
 const express = require("express");
 const mongoose = require("mongoose");
-const dotenv = require("dotenv").config(); // !Doubt
+const dotenv = require("dotenv").config();
 
 // TODO: 5] Import Custom Module [Routes]
 const userRoute = require("./routes/userRoute");
@@ -12,7 +12,6 @@ const PORT = 5000;
 
 // TODO: 3] Listen to the server
 app.listen(PORT, () => {
-  console.clear();
   console.log(`Server is running on the port : ${PORT}`);
 });
 
@@ -29,6 +28,9 @@ mongoose
   .catch((err) => {
     console.log("Failed to connect to MagoDb");
   });
+
+// Middleware to parse JSON bodies
+app.use(express.json());
 
 // TODO: 6] Use the defined routes
 app.use("/user", userRoute);
