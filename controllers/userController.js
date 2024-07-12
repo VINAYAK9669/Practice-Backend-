@@ -7,7 +7,7 @@ const jwt = require("jsonwebtoken");
 
 const PRIVATE_SIGN_KEY = process.env.PRIVATE_SIGN_KEY;
 
-const registerUser = async (req, res) => {
+const registerUser = async (req, res, next) => {
   try {
     //2] destructure the form data values from req.body
     const { name, email, password } = req.body;
@@ -36,11 +36,11 @@ const registerUser = async (req, res) => {
       });
     }
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 };
 
-const handleLogin = async (req, res) => {
+const handleLogin = async (req, res, next) => {
   // 1] We will take input from user {email, password}
   // 2] We need to post the form-dat to the server
   // 3] Res => We will check the email and password are correct
@@ -75,7 +75,7 @@ const handleLogin = async (req, res) => {
       });
     }
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 };
 module.exports = { registerUser, handleLogin };

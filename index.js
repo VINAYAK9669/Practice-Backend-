@@ -2,9 +2,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
+const jobRoute = require("./routes/jobRoute");
 
 // TODO: 5] Import Custom Module [Routes]
 const userRoute = require("./routes/userRoute");
+const errorHandler = require("./middlewares/errorHandler");
 
 // TODO: 2] Create a instance of express and declare port
 const app = express();
@@ -34,3 +36,6 @@ app.use(express.json());
 
 // TODO: 6] Use the defined routes
 app.use("/user", userRoute);
+app.use("/job", jobRoute);
+
+app.use(errorHandler);
