@@ -10,9 +10,9 @@
 
 @layer utilities {
   .form_div_style {
-    @apply h-[64px] max-w-[600px] border-2 border-borderColor-gray_light rounded-[5px] flex items-center;
+    @apply h-[64px] max-w-[600px] lg:w-[600px] border-2 border-borderColor-gray_light rounded-[5px] flex items-center;
   }
   .form_inputs {
-    @apply text-2xl w-full outline-none pl-[1rem];
+    @apply text-2xl w-full outline-none pl-[1rem] bg-transparent;
   }
 }

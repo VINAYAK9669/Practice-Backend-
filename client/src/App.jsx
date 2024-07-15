@@ -2,11 +2,7 @@ import RegisterPage from "./Pages/RegisterPage";
 import "./index.css";
 
 function App() {
-  return (
-    <>
-      <RegisterPage />
-    </>
-  );
+  return <>{/* <RegisterPage /> */}</>;
 }
 
 export default App;
