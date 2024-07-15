@@ -32,6 +32,7 @@ export default {
         borderColor: {
           gray_light: "#C2C2C2",
           gray_lighter: "#CECECE",
+          white: "#FFFFFF",
         },
         bgColor: {
           palePink: "#ED5353",
@@ -39,7 +40,12 @@ export default {
           pink_light: "#FF6B6B",
           pink_lighter: "#FFEEEE",
           pink_dark: "#FF0000",
+          white: "#FFFFFF",
         },
+      },
+      fontWeight: {
+        large: "700",
+        medium: "500",
       },
       boxShadow: {
         "5xl": "0px 4px 23px 2px #0000001A",
