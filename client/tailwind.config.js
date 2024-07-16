@@ -33,6 +33,7 @@ export default {
           gray_light: "#C2C2C2",
           gray_lighter: "#CECECE",
           white: "#FFFFFF",
+          gray: "#E3E3E3",
         },
         bgColor: {
           palePink: "#ED5353",

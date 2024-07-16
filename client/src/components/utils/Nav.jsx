@@ -26,7 +26,7 @@ function Nav() {
           <button className="border-2 border-borderColor-white w-[113px] rounded-[7px] text-3xl text-fontColor-white font-medium h-full">
             Login
           </button>
-          <button className=" w-[113px] rounded-[7px] text-3xl text-fontColor-palePink font-medium h-full bg-bgColor-white">
+          <button className="pink_text w-[113px] rounded-[7px] text-3xl  h-full bg-bgColor-white">
             Register
           </button>
         </div>

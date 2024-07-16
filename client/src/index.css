@@ -8,11 +8,26 @@
   box-sizing: border-box;
 }
 
+@layer components {
+  .jobCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 7px;
+    background-color: #ff0000;
+  }
+}
+
 @layer utilities {
   .form_div_style {
     @apply h-[64px] max-w-[600px] lg:w-[600px] border-2 border-borderColor-gray_light rounded-[5px] flex items-center;
   }
   .form_inputs {
     @apply text-2xl w-full outline-none pl-[1rem] bg-transparent;
+  }
+  .pink_text {
+    @apply text-fontColor-palePink font-medium;
   }
 }
