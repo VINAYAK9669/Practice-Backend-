@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="M0k43CcIq0kIxcMHVmC2" name="Page-1">
+        <mxGraphModel dx="639" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="5" style="edgeStyle=none;html=1;entryX=0.295;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Login" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="120" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="token" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="300" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Error Message" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="414" y="290" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Save to the loca storage&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="410" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="createa fnuction which will validate the token" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="490" width="210" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

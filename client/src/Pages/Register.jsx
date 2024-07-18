@@ -1,19 +1,14 @@
 import React, { useState } from "react";
-
-import axios from "axios";
 import FormHeaders from "../components/utils/FormHeaders";
 import Button from "../components/utils/Button";
 import { img_registerPage } from "../data/useImportAssests";
-import {
-  QueryClient,
-  useMutation,
-  useQuery,
-  useQueryClient,
-} from "@tanstack/react-query";
-import Authentication from "../configuration/Authentication";
+import useAuthentication from "../configuration/useAuthentication";
 
 function CreateAccPage() {
-  const { addUser } = Authentication();
+  const { addUser } = useAuthentication();
+
+  console.log(addUser);
+  // TODO: Below state holds the form data of the user while registering
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,6 +26,7 @@ function CreateAccPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // {mutate, isLoading, isError, Error} = addUser
     addUser.mutate(formData);
   };
 
@@ -94,8 +90,8 @@ function CreateAccPage() {
           </div>
           <div className="flex flex-col gap-y-[0.5rem]">
             <div className="w-[277px] h-[64px] text-4xl">
-              <Button type="submit" disabled={addUser.isLoading}>
-                {addUser.isLoading ? "Creating..." : "Create Account"}
+              <Button type="submit" disabled={addUser.isPending}>
+                {addUser.isPending ? "Creating..." : "Create Account"}
               </Button>
             </div>
             {addUser.isError && (

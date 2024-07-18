@@ -4,13 +4,15 @@ import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 
 import "./index.css";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// ** CONFIGURE REACT QUERY
+
+// TODO: CONFIGURE REACT QUERY
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
-// Create a client
+// *Create a client
 const queryClient = new QueryClient();
 
 function App() {
@@ -33,3 +35,10 @@ function App() {
 }
 
 export default App;
+
+/*
+
+TODO: Configure Tanstack Query
+      - create client using "QueryClient()" outside the main function
+      - Provide client to the main Application using "QueryClientProvider"
+*/
